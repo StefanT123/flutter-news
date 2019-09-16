@@ -2,12 +2,11 @@ import 'package:flutter/material.dart';
 import '../blocs/stories_provider.dart';
 import '../widgets/news_list_tile.dart';
 import '../widgets/refresh.dart';
+import '../blocs/stories_bloc.dart';
 
 class NewsList extends StatelessWidget {
     Widget build(context) {
         final bloc = StoriesProvider.of(context);
-
-        bloc.fetchTopIds();
 
         return Scaffold(
             appBar: AppBar(

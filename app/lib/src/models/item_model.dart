@@ -19,7 +19,7 @@ class ItemModel {
         this.id = parsedJson['id'],
         this.deleted = parsedJson['deleted'] ?? false,
         this.type = parsedJson['type'],
-        this.by = parsedJson['by'],
+        this.by = parsedJson['by'] ?? '',
         this.time = parsedJson['time'],
         this.text = parsedJson['text'] ?? '',
         this.dead = parsedJson['dead'] ?? false,
